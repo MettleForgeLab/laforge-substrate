@@ -1,0 +1,24 @@
+laforge-substrate/
+  README.md
+  forge-deps.yaml
+  forge-deps.schema.json
+
+  CONTRIBUTING.md
+  RELEASE.md
+  SECURITY.md
+
+  docs/
+    GOLDEN_PATH_BRINGUP.md
+    DRIVER_CUDA_MATRIX.md
+    SECRETS_CONVENTIONS.md
+    DIRECTORY_LAYOUT.md
+    AUTOSTART.md
+
+  scripts/
+    validate_forge_deps.py
+    bringup_checks.ps1
+    bringup_checks.sh
+
+  .github/
+    workflows/
+      stack-integrity.yml

@@ -1,0 +1,38 @@
+manifest_version: 1
+repo:
+  name: laforge-substrate
+  layer: substrate
+  semver: true
+  release_channel: medium
+
+interfaces:
+  exports:
+    - id: docs.golden_path_bringup
+      version: 1
+      path: docs/GOLDEN_PATH_BRINGUP.md
+    - id: docs.driver_cuda_matrix
+      version: 1
+      path: docs/DRIVER_CUDA_MATRIX.md
+    - id: docs.secrets_conventions
+      version: 1
+      path: docs/SECRETS_CONVENTIONS.md
+  consumes:
+    - id: governance.aria_substrate_guarantees
+      constraint: ">=1 <2"
+
+deps:
+  upstream:
+    - repo: ForgeEcosystem
+      ref: "v1.0.0"
+    - repo: ARIA-Regulation-Layer
+      ref: "v1.0.0"
+
+determinism:
+  required: false
+  profile: none
+  checks: []
+
+ci:
+  github_actions:
+    workflow: .github/workflows/stack-integrity.yml
+    mode: strict
