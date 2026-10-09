@@ -22,7 +22,7 @@ interfaces:
 
 deps:
   upstream:
-    - repo: ForgeEcosystem
+    - repo: forge-governance-architecture-specification
       ref: "v1.0.0"
     - repo: bounded-event-regulation-specification
       ref: "v1.0.0"
