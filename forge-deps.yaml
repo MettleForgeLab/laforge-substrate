@@ -24,7 +24,7 @@ deps:
   upstream:
     - repo: ForgeEcosystem
       ref: "v1.0.0"
-    - repo: ARIA-Regulation-Layer
+    - repo: bounded-event-regulation-specification
       ref: "v1.0.0"
 
 determinism:
